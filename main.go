@@ -21,7 +21,7 @@ func main() {
 	sm.Handle("/", ph)
 
 	s := http.Server{
-		Addr:         "/",
+		Addr:         ":9090",
 		Handler:      sm,
 		ErrorLog:     l,
 		ReadTimeout:  5 * time.Second,
